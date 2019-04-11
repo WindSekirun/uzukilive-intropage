@@ -3,7 +3,7 @@ pipeline {
     environment {
         registry = "windsekirun/uzukilive-intropage"
         registryCredential = 'DockerHub'
-        def version = readfile env.WORKSPACE+ "/version"
+        def version = readFile env.WORKSPACE+ "/version"
     }
     agent any
     stages {
